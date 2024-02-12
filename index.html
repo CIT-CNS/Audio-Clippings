@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family: Georgia;
+        }
+
+        #audio {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header {
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            color: black;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Georgia;
+        }
+
+        #college-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 100px;
+        }
+
+        #navigation {
+            text-align: center;
+            margin-top: 100px; /* Adjusted margin */
+            
+        }
+
+        .nav-tab {
+            cursor: pointer;
+            padding: 15px;
+            margin: 0 0 5px 0;
+            background: rgb(238,174,202);
+            background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            color: white;
+            border: 1px solid #777;
+            display: block;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Georgia;
+        }
+
+            .nav-tab:hover {
+                background-color: #777;
+            }
+
+        @media (max-width: 768px) {
+            #header {
+                font-size: 9.5px;
+            }
+
+            #navigation {
+                padding: 0px;
+            }
+
+            #college-logo {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                max-width: 100px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #college-logo {
+                max-width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Coimbatore Institute of Technology - Audio Clippings</h1>
+    </div>
+    <div id="audio">
+        <div id="navigation">
+            <div class="nav-tab" onclick="openAboutCIT()">About CIT</div>
+            <div class="nav-tab" onclick="openAudi()">Auditorium</div>
+            <div class="nav-tab" onclick="openCanteen()">Canteen</div>
+            <div class="nav-tab" onclick="openCloud()">Cloud Lab</div>
+            <div class="nav-tab" onclick="openEEE()">EEE Dept</div>
+            <div class="nav-tab" onclick="openHostelLife()">Hostel Life</div>
+            <div class="nav-tab" onclick="openLibrary()">Library</div>
+            <div class="nav-tab" onclick="openOAT()">OAT</div>
+            <div class="nav-tab" onclick="openPCell()">Placement Cell</div>
+            <div class="nav-tab" onclick="openRHarvest()">Rainwater Harvesting</div>
+            <div class="nav-tab" onclick="openPolytechnic()">Sandwich Polytechnic</div>
+            <div class="nav-tab" onclick="openTLC()">TLC</div>
+        </div>
+    </div>
+
+    <script>
+        function openAboutCIT() {
+            window.location.href = 'about CIT.html';
+        }
+        function openAudi() {
+            window.location.href = 'auditorium.html';
+        }
+        function openCanteen() {
+            window.location.href = 'canteen.html';
+        }
+        function openCloud() {
+            window.location.href = 'cloud lab.html';
+        }
+        function openEEE() {
+            window.location.href = 'eee.html';
+        }
+        function openHostelLife() {
+            window.location.href = 'hostellife.html';
+        }
+        function openLibrary() {
+            window.location.href = 'library.html';
+        }
+        function openOAT() {
+            window.location.href = 'oat.html';
+        }
+        function openPCell() {
+            window.location.href = 'placementcell.html';
+        }
+        function RHarvest() {
+            window.location.href = 'Rainwater Harvesting.html';
+        }
+        function openPolytechnic() {
+            window.location.href = 'Sandwich Polytechnic.html';
+        }
+        function openTLC() {
+            window.location.href = 'TLC.html';
+        }
+    </script>
+</body>
+</html>
